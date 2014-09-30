@@ -1,0 +1,15 @@
+/pom.xml
+*jar
+/lib
+/classes
+/native
+/checkouts
+/target
+*.#*
+*#*
+*.classpath
+*.project
+.lein-failures
+.lein-deps-sum
+.lein-repl-history
+.nrepl-port
