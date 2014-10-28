@@ -4,6 +4,7 @@
             :url "http://www.gnu.org/licenses/lgpl.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [koan-engine "0.2.0"]
-                 [org.clojure/core.logic "0.8.8"]]
+                 [org.clojure/core.logic "0.8.8"]
+                 [org.clojure/tools.macro "0.1.2"]]
   :dev-dependencies [[lein-koan "0.1.2"]]
   :plugins [[lein-koan "0.1.2"]])
