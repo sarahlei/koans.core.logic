@@ -1,6 +1,6 @@
 (meditations
  "What is always untrue, shall yield no answer."
- (= (run* [q] u#) __)
+ (= (run* [q] fail) __)
 
  "The truth always sycceeds."
  (= (run* [q] __) '(true))
