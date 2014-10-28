@@ -156,29 +156,33 @@
    [_ (lvar)]
    (membero [_ _ :mozzarella 5] answers)))
 
-(vec (first
-      (let [people       (repeatedly 5 lvar)
-            magazines    (repeatedly 5 lvar)
-            cheeses      (repeatedly 5 lvar)
-            reservations (repeatedly 5 lvar)
-            answers (map vector people magazines cheeses reservations)]
+(comment
 
-        (run 1 [q]
-          (== q answers)
-          (== people [:amaya :bailey :jamari :jason :landon])
-          (rule-1 answers)
-          (rule-2 answers)
-          (rule-3 answers)
-          (rule-4 answers)
-          (rule-5 answers)
-          (rule-6 answers)
-          (rule-7 answers)
-          (rule-8 answers)
-          (rule-9 answers)
-          (rule-10 answers)
-          (rule-11 answers)
-          (permuteo magazines [:fortune :time :cosmopolitan
-                               :us-weekly :vogue])
-          (permuteo cheeses [:asiago :blue-cheese :mascarpone
-                             :mozzarella :muenster])
-          (permuteo reservations [5 6 7 7.5 8.5])))))
+  (vec (first
+        (let [people       (repeatedly 5 lvar)
+              magazines    (repeatedly 5 lvar)
+              cheeses      (repeatedly 5 lvar)
+              reservations (repeatedly 5 lvar)
+              answers (map vector people magazines cheeses reservations)]
+
+          (run 1 [q]
+            (== q answers)
+            (== people [:amaya :bailey :jamari :jason :landon])
+            (rule-1 answers)
+            (rule-2 answers)
+            (rule-3 answers)
+            (rule-4 answers)
+            (rule-5 answers)
+            (rule-6 answers)
+            (rule-7 answers)
+            (rule-8 answers)
+            (rule-9 answers)
+            (rule-10 answers)
+            (rule-11 answers)
+            (permuteo magazines [:fortune :time :cosmopolitan
+                                 :us-weekly :vogue])
+            (permuteo cheeses [:asiago :blue-cheese :mascarpone
+                               :mozzarella :muenster])
+            (permuteo reservations [5 6 7 7.5 8.5])))))
+
+  )
