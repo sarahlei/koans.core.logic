@@ -3,17 +3,18 @@
   (:use [clojure.core.logic :only [fresh run*]])
   (:require [clojure.core.logic.fd :as fd]))
 
+;; There is a safe, which can be opened by entering five numbers. We
+;; do not know the numbers, only their relationships:
+;;
+;;  * The sum of the 5th and 3rd is 14.
+;;  * The 4th is the 2nd plus 1.
+;;  * The 1st is the double of the 2nd minus 1.
+;;  * The sum of the 2nd and 3rd is 10.
+;;  * The sum of all five is 30.
+;;
+;;  What are the numbers?"
+
 (defn keylock
-  "There is a safe, which can be opened by entering five numbers. We
-   do not know the numbers, only their relationships:
-
-   * The sum of the 5th and 3rd is 14.
-   * The 4th is the 2nd plus 1.
-   * The 1st is the double of the 2nd minus 1.
-   * The sum of the 2nd and 3rd is 10.
-   * The sum of all five is 30.
-
-   What are the numbers?"
   []
 
   (first (run* [n1 n2 n3 n4 n5]
