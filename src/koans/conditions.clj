@@ -25,12 +25,12 @@
            [s# s#]
            [(== q :orange)])) __)
 
- "Succeed no matter how much, the questions asked shall be answered, and no more."
- (= (run __ [q]
-         (conde
-          [(== q :extra) s#]
-          [(== q :virgin) u#]
-          [(== q :olive) s#]
-          [(== q :oil) s#])
-         '(:extra :olive)))
+ "Every part of a question needs an answer, or the question itself
+ shall fail."
+ (= (run* [q]
+      (conde
+       [(== q :logic)]
+       [(== q :is) fail]
+       [(== q :fun)]))
+    __)
  )

@@ -19,4 +19,4 @@
                       '(:apple :orange)
                       '(:apple)
                       '(:apple _0 :orange)
-                      2]}]]
+                      '(:logic :fun)]}]]
